@@ -1,0 +1,75 @@
+@import '../../variables.module.scss';
+
+.cardContainer {
+    width: 240px;
+    min-height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product {
+    padding: 0 14px;
+}
+
+.containerDescriptionProduct {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.valueProduct {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-gray;
+    padding: 0px 8px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.paragrafCard {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    margin-top: 8px;
+}
+
+.buttonBuy {
+    width: 100%;
+    background-color: $color-blue;
+    border-radius: 0px 0px 8px 8px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    padding: 10px 0;
+    position: relative;
+    transition: 1s;
+    border: 2px solid transparent;
+}
+
+.buttonBuy:hover {
+    background-color: transparent;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+}
+
+.textButtonBuy {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    font-family: 'Montserrat', sans-serif;
+}

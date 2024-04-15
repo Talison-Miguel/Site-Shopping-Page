@@ -1,0 +1,17 @@
+@import '../../variables.module.scss';
+
+
+.containerFooter {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textFooter {
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-black;
+    font-weight: 400;
+}

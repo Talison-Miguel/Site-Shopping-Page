@@ -1,0 +1,63 @@
+@import '../../variables.module.scss';
+
+.containerHeader {
+    background-color: $color-blue;
+    padding: 28px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    color: $color-white ;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logoSpan {
+    font-size: 20px;
+}
+
+
+.shoppingCart {
+    height: 44px;
+    width: 95px;
+    background-color: $color-white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    gap: 16px;
+    outline: none;
+}
+
+.shoppingCart:hover {
+    color: $color-blue;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.value {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+@media (width <= 460px) {
+    .logo {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .logoSpan {
+        font-size: 16px;
+    }
+}

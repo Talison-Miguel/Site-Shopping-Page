@@ -1,0 +1,110 @@
+@import '../../variables.module.scss';
+
+.containerShoppingItem {
+    margin-top: 28px;
+    position: relative;
+}
+
+.containerShoppingItem:first-child {
+    margin-top: 60px;
+}
+
+.closeIcon {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: $color-black;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.closeIcon:hover {
+    color: $color-gray;
+}
+
+.shoppingItem {
+    background-color: $color-white;
+    color: $color-black;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px 22px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-direction: row;
+    // min-width: 416px;
+}
+
+.shoppingItem p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.shoppingItem span {
+    font-size: 14px;
+}
+
+.containerStepButton {
+    font-size: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stepButton {
+    font-size: 12px;
+    font-weight: 500;
+    border: 0.3px solid #bfbfbf;
+    border-radius: 4px;
+    width: 70px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: none;
+}
+
+.stepButton button {
+    min-width: 18px;
+}
+
+.stepButton:first-child {
+    line-height: 2px;
+}
+
+.stepButton div {
+    height: 80%;
+    display: flex;
+    align-items: center ;
+    border-right: 0.3px solid #bfbfbf;
+    border-left: 0.3px solid #bfbfbf;
+    padding: 0 6px;
+}
+
+.stepButton:before {
+    content: 'Qtd:';
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: 0;
+}
+
+@media (width <= 520px) {
+
+    .shoppingItem {
+        flex-direction: column;
+        gap: 20px;
+        min-width: 196px;
+    }
+
+    .containerStepButton {
+        flex-direction: column;
+    }
+}

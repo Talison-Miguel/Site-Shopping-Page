@@ -51,8 +51,6 @@ export function SectionCard({ open, setOpen, listDataBuy, setListDataBuy, timesA
             {
                 open && <ShoppingPage open={open} setOpen={setOpen} listDataBuy={listDataBuy} setListDataBuy={setListDataBuy} setDataBuy={setDataBuy} timesArray={timesArray} setTimesArray={setTimesArray}/>
             }
-            
-            {/* <button className={styles.buttonLoadMore}>Carregar mais items</button> */}
         </section>
     )
 }

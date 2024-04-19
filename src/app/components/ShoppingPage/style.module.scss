@@ -1,11 +1,10 @@
 @import '../../variables.module.scss';
 
 .containerShoppingPage {
-    // min-height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
-    min-width: 486px;
+    min-width: 500px;
     background-color: $color-blue;
     font-size: 28px;
     color: $color-white;
@@ -24,6 +23,7 @@
     overflow-y: auto;
     top: 0;
     right: 0;
+    z-index: 9999;
 }
 
 .containerShoppingPage::-webkit-scrollbar {
